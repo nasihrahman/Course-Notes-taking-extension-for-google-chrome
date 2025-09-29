@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Lecture Companion</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 320px; padding: 12px; }
+    button { width: 100%; padding: 8px; margin: 6px 0; }
+    select, textarea { width: 100%; margin-top:6px }
+    .small { font-size: 12px; color: #666 }
+  </style>
+</head>
+<body>
+  <h3>Lecture Companion</h3>
+
+  <label>Course</label>
+  <select id="courseSelect"></select>
+
+  <label>Section</label>
+  <select id="sectionSelect"></select>
+
+  <label>Quick note</label>
+  <textarea id="note" rows="3" placeholder="Add a short note..."></textarea>
+
+  <button id="screenshotBtn">Take Screenshot</button>
+  <button id="startRecBtn">Start Recording</button>
+  <button id="stopRecBtn" disabled>Stop Recording</button>
+
+  <div class="small" id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
